@@ -1,7 +1,7 @@
 package Zadaci_17_08_2016;
 
 /*U javi, short vrijednost se sprema u samo 16 bita. Napisati program koji pita korisnika da unese short broj 
- * te mu ispiöe svih 16 bita za dati cijeli broj. Na primjer, ukoliko korisnik unese broj 5 - program mu ispisuje
+ * te mu ispi≈°e svih 16 bita za dati cijeli broj. Na primjer, ukoliko korisnik unese broj 5 - program mu ispisuje
  *  0000000000000101
  * 
  */
@@ -15,6 +15,7 @@ public class Short_Number {
 
 		Scanner input = new Scanner(System.in);
 		
+		//prompt user to enter a number as a short integer
 		System.out.println(" Enter a number as a short integer");
 		
 		
@@ -26,13 +27,14 @@ public class Short_Number {
 			
 			try{
 				
-			
+			//input short integer
 		short number = input.nextShort();
 		
+		//print binary number
 		System.out.println(String.format("%016d", Integer.parseInt(Integer.toBinaryString(number))));
 			}
 			
-			catch(InputMismatchException ex){
+			catch(InputMismatchException ex){//Catch exception and handle it
 				
 				System.out.println("Invalid input. Enter a number");
 				correct = true;
