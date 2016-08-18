@@ -24,7 +24,7 @@ public class String_Format {
 	String n = number + "";//assign number with prefix to n
 	
 	
-	//
+	
 	for(int i =0; i < (width - n.length());i++){
 		
 		s+="0";//add 0 to string

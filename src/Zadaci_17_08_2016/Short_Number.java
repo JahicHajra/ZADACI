@@ -15,6 +15,8 @@ public class Short_Number {
 
 		Scanner input = new Scanner(System.in);
 		
+		
+		//prompt the user to enter a number as a short integer
 		System.out.println(" Enter a number as a short integer");
 		
 		
@@ -26,13 +28,15 @@ public class Short_Number {
 			
 			try{
 				
-			
+		//input short number	
 		short number = input.nextShort();
 		
+		
+		//print binary number
 		System.out.println(String.format("%016d", Integer.parseInt(Integer.toBinaryString(number))));
 			}
 			
-			catch(InputMismatchException ex){
+			catch(InputMismatchException ex){//catch exception
 				
 				System.out.println("Invalid input. Enter a number");
 				correct = true;

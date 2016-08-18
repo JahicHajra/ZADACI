@@ -14,6 +14,7 @@ public class ASCII {
 		
 		Scanner input = new Scanner(System.in);
 		
+		//prompt the user to enter a number
 		System.out.println(" Enter a number");
 		
 		
@@ -25,15 +26,15 @@ public class ASCII {
 			
 			try{
 				
-			
+		//number input
 		int n = input.nextInt();
 		
-		
+		//print character 
 		System.out.println( "Character with the number " + n + " is " + (char)n);
 		
 	
 	}
-			catch(InputMismatchException ex){
+			catch(InputMismatchException ex){//catch exception
 				System.out.println(" Invalid input. Enter a number");
 				correct = true;
 			}

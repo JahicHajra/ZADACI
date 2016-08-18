@@ -18,7 +18,7 @@ public class Distinct_Numbers {
 		//create an arrayList
 		ArrayList<Integer> array = new ArrayList<>();
 		
-		//print numbers starting from 1 not from 0
+		//print numbers starting from 1 
 		for(int i=0; i<10; i++){ 
 		System.out.printf("%d. number: ", i+1);
 	

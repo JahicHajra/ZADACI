@@ -14,7 +14,7 @@ public class Unicode {
 
 		Scanner input = new Scanner(System.in);
 		
-		
+		//prompt the user to enter a character
 		System.out.println(" Enter a character");
 		
 		
@@ -31,10 +31,10 @@ public class Unicode {
 		String ch = input.next();
 		
 		
-		//print unicode for the character
+		//print unicode for the entered character
 		System.out.println(" Unicode is " + (int)ch.charAt(0));
 			}
-		catch(Exception ex){
+		catch(Exception ex){//catch exception
 			
 			System.out.println("");
 			
