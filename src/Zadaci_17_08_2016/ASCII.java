@@ -1,6 +1,6 @@
 package Zadaci_17_08_2016;
 
-/*Napisati program koji prima ASCII kod (cijeli broj izmeðu 0 i 127) te ispisuje koji je to karakter. 
+/*Napisati program koji prima ASCII kod (cijeli broj izmeÃ°u 0 i 127) te ispisuje koji je to karakter. 
  * Na primjer, ukoliko korisnik unese 69 kao ASCII kod, program mu ispisuje da je karakter sa tim brojem karakter E.
  * 
  * 
@@ -14,7 +14,9 @@ public class ASCII {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println(" Enter a number");
+		
+		//prompt the user to enter an ASCII code
+		System.out.println(" Enter an ASCII code(an integer between 0-127");
 		
 		
 		boolean correct = true;
@@ -25,15 +27,15 @@ public class ASCII {
 			
 			try{
 				
-			
+		//number input	
 		int n = input.nextInt();
 		
-		
+		//print character
 		System.out.println( "Character with the number " + n + " is " + (char)n);
 		
 	
 	}
-			catch(InputMismatchException ex){
+			catch(InputMismatchException ex){//catch exception
 				System.out.println(" Invalid input. Enter a number");
 				correct = true;
 			}
