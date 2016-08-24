@@ -1,0 +1,36 @@
+package Zadaci_23_08_2016;
+/* (The MyPoint class) Design a class named MyPoint to represent a point with
+x- and y-coordinates. The class contains:
+ The data fields x and y that represent the coordinates with getter
+methods.
+ A no-arg constructor that creates a point (0, 0).
+ A constructor that constructs a point with specified coordinates.
+ A method named distance that returns the distance from this point to a
+specified point of the MyPoint type.
+  A method named distance that returns the distance from this point to
+another point with specified x- and y-coordinates.
+Draw the UML diagram for the class and then implement the class. Write a
+test program that creates the two points (0, 0) and (10, 30.5) and displays the
+distance between them.
+ * 
+ * 
+ */
+
+public class MyPoint_test {
+
+	public static void main(String[] args) {
+
+
+
+		//two points(objects)
+				MyPoint p1 = new MyPoint(0,0);
+				MyPoint p2 = new MyPoint (10,30.5);
+
+
+				//display distance btw them
+				System.out.println("The distance between "+ p1.distance(p2));
+				
+
+	}
+
+}
