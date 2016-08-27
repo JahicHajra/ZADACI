@@ -24,7 +24,7 @@ public class NewStringSplitMethod {
 		System.out.print(str + "");
 		
 	}
-	String[]s2 = split("a?b?gf#e", "[?#]");
+	String[]s2 = split("\na?b?gf#e", "[?#]");
 	
 	for(String str:s2){
 		System.out.print(str);
@@ -42,7 +42,7 @@ public static String[] split(String s, String regex){
 	
 	//comparing characters of a string with characters of regex
 	for(int i = 0; i < s.length();i++){
-		
+		counter = 0;
 		for(int j = 0; j < regex.length();j++){
 			
 			if(s.charAt(i)==regex.charAt(j)){
