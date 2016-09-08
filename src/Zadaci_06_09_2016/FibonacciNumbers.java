@@ -15,13 +15,15 @@ public class FibonacciNumbers {
 		
 		int index = input.nextInt();
 		
-		System.out.println(" Fibonacci number at index " + index + " is " + fib(index));
+		System.out.println(" Fibonacci number at index " + index + " is " + fib(index));//method invocation
 		
 	}
 	
+	//method for finding the number with index user entered
 	public static long fib(long index){
 		
-		if(index == 1 || index==0)
+		//base case
+		if(index == 1 || index==0) 
 			return index;
 			
 		

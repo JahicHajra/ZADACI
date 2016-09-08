@@ -13,6 +13,7 @@ public class SumSeries_18_6 {
 	//recursive method for computing the sum of series
 	public static double sum(double n){
 		
+		//base case
 		if(n<1)
 			
 			return 0;

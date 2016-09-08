@@ -20,12 +20,14 @@ public class GcdTest {
 		int number1 = input.nextInt();
 			int number2 = input.nextInt();
 		
-			System.out.println(" Gcd for number " + number1 + " and number " + number2 + " is " +
-			gcd(number1,number2));
+			System.out.println(" Gcd for " + number1 + " and " + number2 + " is " +
+			gcd(number1,number2));//method invocation
 	}
+	
+	//recursive method for finding gcd 
 public static int gcd(int m,int n){
 	
-
+//base case
 	if(m ==0 ||  n==0){
 		
 		return m+n;
