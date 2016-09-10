@@ -1,5 +1,5 @@
 package Zadaci_08_09_2016;
-/** (Distinct elements in ArrayList) Write the following method that returns a new
+/* (Distinct elements in ArrayList) Write the following method that returns a new
  * ArrayList. The new list contains the non-duplicate elements from the original list.
  * public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list)
  */
@@ -10,38 +10,35 @@ public class RemoveDuplicates {
 	public static void main(String[] args) {
 
 		
-//create arrayList
-		ArrayList<String> s = new ArrayList<>();
-		for (int i = 0; i < 10; i++) {
-			
-			// adding elements to the list-strings
-			s.add(" You're finished!");
-			s.add(" Completed.");
-			s.add("Done. ");
-			s.add(" You're finished.");
-
-		}
-
-		s = removeDuplicates(s);
-		for (int i = 0; i< s.size();i++){
-			System.out.println(s.get(i));
-		}
-	}
-
-	// method that returns a new ArrayList with no duplicates
-	public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list) {
-
-		ArrayList<E> temp = new ArrayList<>(list.size());
-		for (E e: list) {
-			//checks the element for specific element
-			if (!temp.contains(e)) {
-				
-				//add element to a new list
-				temp.add(e);
-			}
-		}
+		ArrayList<String> list = new ArrayList<String>();
 		
-return temp;
+		//String inputs
+	    list.add("You're finished");
+	    list.add("Completed");
+	    list.add("Done");
+	    list.add("You're finished");
+	   
+			
+	    
+	    print(removeDuplicates(list));		
 	}
 
-}
+	// Method used for removing duplicates from an array 
+	public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list) {
+		ArrayList<E> temp= new ArrayList<E>();
+		for (E e : list) {
+			if (!temp.contains(e)) {	//if list doesn't contain element, add it
+				temp.add(e);
+		    }
+		}
+		return temp;
+	}
+
+	// Print array method 
+	public static <E> void print(ArrayList<E> list) {
+		for (E ex : list) {
+			System.out.print(ex + " ");
+		}
+	}
+
+	}
